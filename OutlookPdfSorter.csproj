@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>false</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- SIN referencia a Microsoft.Office.Interop.Outlook -->
+    <!-- Outlook se maneja por COM late-binding con dynamic -->
+
+    <!-- iText7 para leer texto de PDFs -->
+    <PackageReference Include="itext7" Version="8.0.5" />
+
+    <!-- Conector MySQL -->
+    <PackageReference Include="MySql.Data" Version="8.4.0" />
+  </ItemGroup>
+
+</Project>
